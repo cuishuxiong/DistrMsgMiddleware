@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: rabbitmq-provider
+  rabbitmq:
+    host: 182.92.160.97
+    port: 5672
+    username: admin
+    password: admin
+    virtual-host: /
