@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    master:
+      username: root
+      password: 123456
+      jdbc-url: jdbc:mysql://182.92.160.97:3306/test_slave?useUnicode=true&characterEncoding=utf-8
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    slave1:
+      username: root
+      password: 123456
+      jdbc-url: jdbc:mysql://182.92.160.97:3307/test_slave?useUnicode=true&characterEncoding=utf-8
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    slave2:
+      username: root
+      password: 123456
+      jdbc-url: jdbc:mysql://182.92.160.97:3308/test_slave?useUnicode=true&characterEncoding=utf-8
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+server:
+  port: 8081
